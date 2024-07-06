@@ -12,9 +12,9 @@ title                    : "Abdelhak Bouayad"
 title_separator          : "-"
 name                     : &name "Abdelhak Bouayad"
 description              : &description "personal description"
-url                      : https://abbouayad.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://abbouayad.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "abbouayad/abbouayad.github.io"
+repository               : "abbouayad.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -123,7 +123,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : "@ab_bouayad"
+  username               : "@ab_bouayad
 facebook:
   username               :
   app_id                 :
