@@ -123,7 +123,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : @ab_bouayad
+  username               : &ab_bouayad
 facebook:
   username               :
   app_id                 :
