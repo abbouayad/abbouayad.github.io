@@ -14,29 +14,31 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if include.type == "grid" and teaser %}
-      <div class="archive__item-teaser">
-        <img src=
-          {% if teaser contains "://" %}
-            "{{ teaser }}"
-          {% else %}
-            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
-          {% endif %}
-          alt="">
-      </div>
-    {% endif %}
-    <h2 class="archive__item-title" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+    <p>
+      {% if post.type == 'Talk' %}
+        {% if post.title %}{{ post.title }}.{% endif %}
+        {% if post.authors %}{{ post.authors }}.{% endif %}
+        {% if post.booktitle %}In <i>{{ post.booktitle }}</i>.{% endif %}
+        {% if post.date %}{{ post.date | date: '%B %d, %Y' }}.{% endif %}
+        {% if post.location %}{{ post.location }}.{% endif %}
+        {% if post.slidesurl %}[<a href="{{ post.slidesurl }}">Slides</a>]{% endif %}
+      {% elsif post.type == 'conference' and post.slidesurl %}
+        {% if post.title %}{{ post.title }}.{% endif %}
+        {% if post.authors %}{{ post.authors }}.{% endif %}
+        {% if post.booktitle %}In <i>{{ post.booktitle }}</i>.{% endif %}
+        {% if post.date %}{{ post.date | date: '%B %d, %Y' }}.{% endif %}
+        {% if post.location %}{{ post.location }}.{% endif %}
+        <!-- {% if post.video %}[![Video](https://img.youtube.com/vi/{{ post.video }}/mqdefault.jpg)]{% endif %} -->
+        [<a href="{{ post.slidesurl }}">Slides</a>]
+        {% if post.youtubeid %}<p><a href="https://www.youtube.com/watch?v={{ post.youtubeid }}"><img src="https://img.youtube.com/vi/{{ post.youtubeid }}/mqdefault.jpg" style="width:160px;height:90px;"></a></p>{% endif %}
+      {% elsif post.type == 'conference' and post.posterurl %}
+        {% if post.title %}{{ post.title }}.{% endif %}
+        {% if post.authors %}{{ post.authors }}.{% endif %}
+        {% if post.booktitle %}In <i>{{ post.booktitle }}</i>.{% endif %}
+        {% if post.date %}{{ post.date | date: '%B %d, %Y' }}.{% endif %}
+        {% if post.location %}{{ post.location }}.{% endif %}        
+        [<a href="{{ post.posterurl }}">Poster</a>]
       {% endif %}
-    </h2>
-    {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %}
-    {% if post.date %}<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
-    {% if post.venue %}<p class="archive__item-excerpt" itemprop="description">{{post.type}}, {{ post.venue }},  {{post.location}} {% endif %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
+    </p>
   </article>
 </div>

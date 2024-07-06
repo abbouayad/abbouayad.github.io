@@ -1,13 +1,15 @@
 ---
-title: "Paper Title Number 1"
+title: 'NF-NIDS: Normalizing Flows for Network Intrusion Detection Systems'
+authors: 'Hamza Alami, Ismail Berrada,<strong>Abdelhak Bouayad</strong>, Meryem Janati Idrissi'
+type: 'conference'
+booktitle: 'In the 10th International Conference on Wireless Networks and Mobile Communications (<strong>WINCOM</strong>)'
 collection: publications
 permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+date: 2023-11-26
+year: 2023
+#pages: '772-783'
+paperurl: https://ieeexplore.ieee.org/document/10322987
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+
+
