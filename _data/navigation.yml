@@ -16,7 +16,7 @@ main:
   #  url: /year-archive/
     
   - title: "CV"
-    url: 'http://localhost:4000/files/resume.pdf'
+    url: 'https://abouayad.com/files/resume.pdf'
     
   #- title: "Guide"
   #  url: /markdown/
