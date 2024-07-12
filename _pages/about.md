@@ -18,4 +18,4 @@ With my work, I want to help create a future where advanced AI technologies work
 
 When I’m not immersed in research, you might find me playing football with friends, engaging in various sports activities, or enjoying quality time with my family. I’m always eager to collaborate with fellow researchers, industry professionals, or anyone passionate about the ethical advancement of AI.
 
-Feel free to reach out if you’d like to discuss ideas, potential collaborations, or just chat about the latest developments in our field!
+Feel free to [reach out](mailto:abdelhak.bouayad@um6p.ma) if you’d like to discuss ideas, potential collaborations, or just chat about the latest developments in our field!
