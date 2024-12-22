@@ -1,7 +1,7 @@
 ---
 title: 'Lightweight Federated Learning for Efficient Network Intrusion Detection'
 authors: '<strong>Abdelhak Bouayad</strong>, Hamza Alami, Meryem Janati Idrissi, Ismail Berrada'
-type: 'Journal'
+type: 'conference'
 booktitle: 'IEEE Access'
 collection: publications
 permalink: /publication/2024-11-8-FEDSNIDS.md
